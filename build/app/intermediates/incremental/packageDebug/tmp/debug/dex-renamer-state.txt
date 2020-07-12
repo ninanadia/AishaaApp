@@ -1,0 +1,4 @@
+#Sun Jul 12 11:27:10 ICT 2020
+base.0=D\:\\aishaa_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
