@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 # aishaa_app
 
 A new Flutter project.
@@ -20,6 +19,3 @@ samples, guidance on mobile development, and a full API reference.
 # Aishaa_app
 projek kerja praktek
 >>>>>>> d7cbe8ede6c44532bdd1c400b981932207e6f004
-=======
-# aishaa_app
->>>>>>> c6a074dded5a89ba6e0dadc7c0ae8809bfd7ca24
