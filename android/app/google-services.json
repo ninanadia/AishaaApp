@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "222869891657",
+    "firebase_url": "https://aishaa-49d07.firebaseio.com",
+    "project_id": "aishaa-49d07",
+    "storage_bucket": "aishaa-49d07.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222869891657:android:89afa8324f9b241a22ed98",
+        "android_client_info": {
+          "package_name": "com.example.aishaa_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222869891657-7pjk7v9ild8egjslrpvul6ggubgc71ob.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRkM5PXadQf1XwgnNlM0LsDpexYN5hngo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222869891657-7pjk7v9ild8egjslrpvul6ggubgc71ob.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

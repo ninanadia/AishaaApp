@@ -5,7 +5,7 @@
 5    android:versionName="1.0.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="16"
+8        android:minSdkVersion="21"
 9        android:targetSdkVersion="28" />
 10    <!--
 11         Flutter needs it to communicate with the running application
@@ -14,98 +14,175 @@
 14    <uses-permission android:name="android.permission.INTERNET" />
 14-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:8:5-66
 14-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:8:22-64
-15
-16    <application
-16-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:9:5-47:19
-17        android:name="io.flutter.app.FlutterApplication"
-17-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:10:9-57
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\a528b13ac93e64cafa3d0480e2c93207\core-1.1.0\AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:icon="@mipmap/ic_launcher"
-20-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:12:9-43
-21        android:label="aishaa_app" >
-21-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:11:9-35
-22        <activity
-22-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:13:9-41:20
-23            android:name="com.example.aishaa_app.MainActivity"
-23-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:14:13-41
-24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-24-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:17:13-163
-25            android:hardwareAccelerated="true"
-25-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:18:13-47
-26            android:launchMode="singleTop"
-26-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:15:13-43
-27            android:theme="@style/LaunchTheme"
-27-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:16:13-47
-28            android:windowSoftInputMode="adjustResize" >
-28-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:19:13-55
-29
-30            <!--
-31                 Specifies an Android theme to apply to this Activity as soon as
-32                 the Android process has started. This theme is visible to the user
-33                 while the Flutter UI initializes. After that, this theme continues
-34                 to determine the Window background behind the Flutter UI.
-35            -->
-36            <meta-data
-36-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:24:13-27:17
-37                android:name="io.flutter.embedding.android.NormalTheme"
-37-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:25:15-70
-38                android:resource="@style/NormalTheme" />
-38-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:26:15-52
-39            <!--
-40                 Displays an Android View that continues showing the launch screen
-41                 Drawable until Flutter paints its first frame, then this splash
-42                 screen fades out. A splash screen is useful to avoid any visual
-43                 gap between the end of Android's launch screen and the painting of
-44                 Flutter's first frame.
-45            -->
-46            <meta-data
-46-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:33:13-36:17
-47                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-47-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:34:15-79
-48                android:resource="@drawable/launch_background" />
-48-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:35:15-61
-49
-50            <intent-filter>
-50-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:37:13-40:29
-51                <action android:name="android.intent.action.MAIN" />
-51-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:38:17-68
-51-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:38:25-66
-52
-53                <category android:name="android.intent.category.LAUNCHER" />
-53-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:39:17-76
-53-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:39:27-74
-54            </intent-filter>
-55        </activity>
-56        <!--
-57             Don't delete the meta-data below.
-58             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-59        -->
-60        <meta-data
-60-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:44:9-46:33
-61            android:name="flutterEmbedding"
-61-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:45:13-44
-62            android:value="2" />
-62-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:46:13-30
-63
-64        <provider
-64-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-18:20
-65            android:name="androidx.core.content.FileProvider"
-65-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-62
-66            android:authorities="com.example.aishaa_app.fileprovider"
-66-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-64
-67            android:exported="false"
-67-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-37
-68            android:grantUriPermissions="true" >
-68-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-47
-69            <meta-data
-69-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-17:53
-70                android:name="android.support.FILE_PROVIDER_PATHS"
-70-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-67
-71                android:resource="@xml/filepaths" />
-71-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-50
-72        </provider>
-73    </application>
-74
-75</manifest>
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:9:5-79
+15-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:10:5-81
+16-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:10:22-78
+17    <!-- <uses-sdk android:minSdkVersion="14"/> -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\c18679774ada7db78ada0de75e7d1a56\jetified-firebase-storage-17.0.0\AndroidManifest.xml:26:5-79
+18-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\c18679774ada7db78ada0de75e7d1a56\jetified-firebase-storage-17.0.0\AndroidManifest.xml:26:22-76
+19
+20    <application
+20-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:11:5-49:19
+21        android:name="io.flutter.app.FlutterApplication"
+21-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:12:9-57
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.2.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\35f29bb1a578f0319e9c3e21730b6b49\core-1.2.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/launcher_icon"
+24-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:14:9-45
+25        android:label="aishaa_app" >
+25-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:13:9-35
+26        <activity
+26-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:15:9-43:20
+27            android:name="com.example.aishaa_app.MainActivity"
+27-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:16:13-41
+28            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+28-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:19:13-163
+29            android:hardwareAccelerated="true"
+29-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:20:13-47
+30            android:launchMode="singleTop"
+30-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:17:13-43
+31            android:theme="@style/LaunchTheme"
+31-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:18:13-47
+32            android:windowSoftInputMode="adjustResize" >
+32-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:21:13-55
+33
+34            <!--
+35                 Specifies an Android theme to apply to this Activity as soon as
+36                 the Android process has started. This theme is visible to the user
+37                 while the Flutter UI initializes. After that, this theme continues
+38                 to determine the Window background behind the Flutter UI.
+39            -->
+40            <meta-data
+40-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:26:13-29:17
+41                android:name="io.flutter.embedding.android.NormalTheme"
+41-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:27:15-70
+42                android:resource="@style/NormalTheme" />
+42-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:28:15-52
+43            <!--
+44                 Displays an Android View that continues showing the launch screen
+45                 Drawable until Flutter paints its first frame, then this splash
+46                 screen fades out. A splash screen is useful to avoid any visual
+47                 gap between the end of Android's launch screen and the painting of
+48                 Flutter's first frame.
+49            -->
+50            <meta-data
+50-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:35:13-38:17
+51                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+51-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:36:15-79
+52                android:resource="@drawable/launch_background" />
+52-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:37:15-61
+53
+54            <intent-filter>
+54-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:39:13-42:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:40:17-68
+55-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:40:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:41:17-76
+57-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:41:27-74
+58            </intent-filter>
+59        </activity>
+60        <!--
+61             Don't delete the meta-data below.
+62             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+63        -->
+64        <meta-data
+64-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:46:9-48:33
+65            android:name="flutterEmbedding"
+65-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:47:13-44
+66            android:value="2" />
+66-->D:\aishaa_app\android\app\src\main\AndroidManifest.xml:48:13-30
+67
+68        <service
+68-->[:firebase_storage] D:\aishaa_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+69            android:name="com.google.firebase.components.ComponentDiscoveryService"
+69-->[:firebase_storage] D:\aishaa_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:8:18-89
+70            android:directBootAware="true"
+70-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\2ad8a98ae85090cb13501d9cde9957d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+71            android:exported="false" >
+71-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f07a05ac0bb6ef7aa0f4a45e28c6bf04\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:19:13-37
+72            <meta-data
+72-->[:firebase_storage] D:\aishaa_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+73                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+73-->[:firebase_storage] D:\aishaa_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-126
+74                android:value="com.google.firebase.components.ComponentRegistrar" />
+74-->[:firebase_storage] D:\aishaa_app\build\firebase_storage\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+75            <meta-data
+75-->[:cloud_firestore] D:\aishaa_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+76                android:name="com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar"
+76-->[:cloud_firestore] D:\aishaa_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+77                android:value="com.google.firebase.components.ComponentRegistrar" />
+77-->[:cloud_firestore] D:\aishaa_app\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+78            <meta-data
+78-->[:firebase_core] D:\aishaa_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+79                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar"
+79-->[:firebase_core] D:\aishaa_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+80                android:value="com.google.firebase.components.ComponentRegistrar" />
+80-->[:firebase_core] D:\aishaa_app\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+81            <meta-data
+81-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\c18679774ada7db78ada0de75e7d1a56\jetified-firebase-storage-17.0.0\AndroidManifest.xml:31:13-33:85
+82                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+82-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\c18679774ada7db78ada0de75e7d1a56\jetified-firebase-storage-17.0.0\AndroidManifest.xml:32:17-107
+83                android:value="com.google.firebase.components.ComponentRegistrar" />
+83-->[com.google.firebase:firebase-storage:17.0.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\c18679774ada7db78ada0de75e7d1a56\jetified-firebase-storage-17.0.0\AndroidManifest.xml:33:17-82
+84            <meta-data
+84-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f07a05ac0bb6ef7aa0f4a45e28c6bf04\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:20:13-22:85
+85                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+85-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f07a05ac0bb6ef7aa0f4a45e28c6bf04\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:21:17-111
+86                android:value="com.google.firebase.components.ComponentRegistrar" />
+86-->[com.google.firebase:firebase-firestore:21.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f07a05ac0bb6ef7aa0f4a45e28c6bf04\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:22:17-82
+87        </service>
+88
+89        <provider
+89-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:9:9-18:20
+90            android:name="androidx.core.content.FileProvider"
+90-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:10:13-62
+91            android:authorities="com.example.aishaa_app.fileprovider"
+91-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:11:13-64
+92            android:exported="false"
+92-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:12:13-37
+93            android:grantUriPermissions="true" >
+93-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-47
+94            <meta-data
+94-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-17:53
+95                android:name="android.support.FILE_PROVIDER_PATHS"
+95-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-67
+96                android:resource="@xml/filepaths" />
+96-->[:flutter_webview_plugin] D:\aishaa_app\build\flutter_webview_plugin\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-50
+97        </provider>
+98
+99        <activity
+99-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\c74e9d76b9181d3585ba58111e512b89\play-services-base-17.2.1\AndroidManifest.xml:23:9-26:75
+100            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+100-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\c74e9d76b9181d3585ba58111e512b89\play-services-base-17.2.1\AndroidManifest.xml:24:13-79
+101            android:exported="false"
+101-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\c74e9d76b9181d3585ba58111e512b89\play-services-base-17.2.1\AndroidManifest.xml:25:13-37
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+102-->[com.google.android.gms:play-services-base:17.2.1] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\c74e9d76b9181d3585ba58111e512b89\play-services-base-17.2.1\AndroidManifest.xml:26:13-72
+103
+104        <provider
+104-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\2ad8a98ae85090cb13501d9cde9957d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+105            android:name="com.google.firebase.provider.FirebaseInitProvider"
+105-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\2ad8a98ae85090cb13501d9cde9957d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+106            android:authorities="com.example.aishaa_app.firebaseinitprovider"
+106-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\2ad8a98ae85090cb13501d9cde9957d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+107            android:exported="false"
+107-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\2ad8a98ae85090cb13501d9cde9957d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+108            android:initOrder="100" />
+108-->[com.google.firebase:firebase-common:19.3.0] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\2ad8a98ae85090cb13501d9cde9957d9\jetified-firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+109
+110        <meta-data
+110-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f92ad4aa5ef512261b960bf16a57aba9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:23:9-25:69
+111            android:name="com.google.android.gms.version"
+111-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f92ad4aa5ef512261b960bf16a57aba9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:24:13-58
+112            android:value="@integer/google_play_services_version" />
+112-->[com.google.android.gms:play-services-basement:17.2.1] C:\Users\ASUS\.gradle\caches\transforms-2\files-2.1\f92ad4aa5ef512261b960bf16a57aba9\jetified-play-services-basement-17.2.1\AndroidManifest.xml:25:13-66
+113    </application>
+114
+115</manifest>

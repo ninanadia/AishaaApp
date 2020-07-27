@@ -25,7 +25,19 @@ class _VideoKajianPageState extends State<VideoKajianPage> {
         elevation: 0.0,
       ),
       body: new SingleChildScrollView(
-          child: new Column(children: <Widget>[
+      child: 
+      new Column(
+        children: <Widget>[
+        Container(
+          margin: EdgeInsets.fromLTRB(10, 20, 150, 10),
+            
+            child: Text(
+              "Pilih Playlist Videomu",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.w800,
+                  fontSize: 16.0),
+            )),
         new Padding(
           padding: const EdgeInsets.all(5),
         ),
@@ -58,14 +70,17 @@ class _VideoKajianPageState extends State<VideoKajianPage> {
   }
 }
 
-class ListMenu extends StatelessWidget {  
+class ListMenu extends StatelessWidget {
   ListMenu({this.title, this.url});
   final String title;
   final String url;
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: new Icon(Icons.video_library, color: TemaApp.pinkRoseColor,),
+      leading: new Icon(
+        Icons.video_library,
+        color: TemaApp.pinkRoseColor,
+      ),
       title: new Text(
         title,
         style: new TextStyle(fontSize: 15.0),

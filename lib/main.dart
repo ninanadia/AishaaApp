@@ -1,3 +1,5 @@
+import 'package:aishaa_app/pages/jadwal_solat.dart';
+import 'package:aishaa_app/pages/navbar.dart';
 import 'package:aishaa_app/pages/video_kajian.dart';
 import 'package:flutter/material.dart';
 import 'package:aishaa_app/pages/splashscreen.dart';
@@ -19,6 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Aishaa',
       home: SplashScreenPage(),
       routes: <String, WidgetBuilder>{
+        '/navbar': (BuildContext context) => Navbar(),
         '/homepage': (BuildContext context) => HomePage(),
         '/risalahhaidpage': (BuildContext context) => RisalahHaidPage(),
         '/risalahnifaspage': (BuildContext context) => RisalahNifasPage(),
@@ -26,6 +29,7 @@ class MyApp extends StatelessWidget {
             RisalahIstihadohPage(),
         '/morepage': (BuildContext context) => MorePage(),
         '/videokajianpage': (BuildContext context)=> VideoKajianPage(),
+        '/jadwalshalat': (BuildContext context)=> JadwalSolatPage(),
       },
       theme: ThemeData(
         primaryColor: Color(0xFFF26968),
