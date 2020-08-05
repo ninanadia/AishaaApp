@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
+import 'package:aishaa_app/utils/colors.dart';
+
 
 class RisalahHaidDetail extends StatefulWidget {
   final DocumentSnapshot post;
@@ -13,7 +16,14 @@ class _RisalahHaidDetailState extends State<RisalahHaidDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: GradientAppBar(
+        gradient: LinearGradient(
+            colors: [
+              TemaApp.pinkRoseColor,
+              TemaApp.pinkYoungColor,
+            ],
+            tileMode: TileMode.clamp,
+          ),
         title: Text(
           widget.post.data["title"],
           style:
@@ -29,7 +39,7 @@ class _RisalahHaidDetailState extends State<RisalahHaidDetail> {
               Container(
                   width: MediaQuery.of(context).size.width,
                   child: Image.network(
-                    widget.post.data["img"],
+                    widget.post.data["image"],
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height * 0.3,
                     fit: BoxFit.fill,
@@ -42,32 +52,17 @@ class _RisalahHaidDetailState extends State<RisalahHaidDetail> {
                   padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                   width: MediaQuery.of(context).size.width,
                   child: Text(
-                    widget.post.data["content"].replaceAll("\\n", "\n"),
-                    textAlign: TextAlign.justify,
-                    style: TextStyle(fontFamily: 'montserrat', fontSize: 17),
+                    widget.post.data["content"].replaceAll("\\n", "\t"),
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        fontFamily: 'montserrat',
+                        fontSize: 19,
+                        height: 2,
+                        letterSpacing: 1),
                   ))
             ],
           ),
         ],
-      ),
-      bottomNavigationBar: Container(
-        height: MediaQuery.of(context).size.height * 0.06,
-        child: RaisedButton(
-          color: Color(0xFF56A74D),
-          onPressed: () {
-            Navigator.pushNamed(context, widget.post.data["nextPage"]);
-          },
-          child: Center(
-            child: Text(
-              "Hitung Zakatmu",
-              style: TextStyle(
-                  fontFamily: 'montserrat',
-                  fontWeight: FontWeight.bold,
-                  fontSize: 20,
-                  color: Colors.white),
-            ),
-          ),
-        ),
       ),
     );
   }

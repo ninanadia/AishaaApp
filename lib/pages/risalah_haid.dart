@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:aishaa_app/utils/colors.dart';
-//import 'package:gradient_app_bar/gradient_app_bar.dart';
+import 'package:gradient_app_bar/gradient_app_bar.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'risalah_haid_detail.dart';
 
@@ -16,7 +16,7 @@ class _RisalahHaidPageState extends State<RisalahHaidPage> {
     var firestore = Firestore.instance;
 
     QuerySnapshot risalahHaid =
-        await firestore.collection("risalah").getDocuments();
+        await firestore.collection("test").getDocuments();
 
     return risalahHaid.documents;
   }
@@ -33,6 +33,18 @@ class _RisalahHaidPageState extends State<RisalahHaidPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+     appBar: GradientAppBar(
+          gradient: LinearGradient(
+            colors: [
+              TemaApp.pinkRoseColor,
+              TemaApp.pinkYoungColor,
+            ],
+            tileMode: TileMode.clamp,
+          ),
+          title: Text("Risalah Haid", style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+          centerTitle: true,
+          elevation: 0.0,
+        ),
         body: Container(
             child: FutureBuilder(
                 future: getPost(),
@@ -57,8 +69,8 @@ class _RisalahHaidPageState extends State<RisalahHaidPage> {
                                     snapshot.data[index].data["title"],
                                     style: TextStyle(
                                         fontFamily: 'montserrat',
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18,
+                                        //fontWeight: FontWeight.bold,
                                         color: Colors.white),
                                   ),
                                 ),
@@ -67,6 +79,8 @@ class _RisalahHaidPageState extends State<RisalahHaidPage> {
                           );
                         });
                   }
-                })));
+                }
+                )
+                ));
   }
 }

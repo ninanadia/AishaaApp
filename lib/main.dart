@@ -1,3 +1,6 @@
+import 'package:aishaa_app/pages/about_aishaa.dart';
+import 'package:aishaa_app/pages/about_us.dart';
+import 'package:aishaa_app/pages/informasi_sumber.dart';
 import 'package:aishaa_app/pages/jadwal_solat.dart';
 import 'package:aishaa_app/pages/navbar.dart';
 import 'package:aishaa_app/pages/video_kajian.dart';
@@ -30,6 +33,9 @@ class MyApp extends StatelessWidget {
         '/morepage': (BuildContext context) => MorePage(),
         '/videokajianpage': (BuildContext context)=> VideoKajianPage(),
         '/jadwalshalat': (BuildContext context)=> JadwalSolatPage(),
+        '/aboutaishaa' : (BuildContext context)=> AboutAishaa(),
+        '/aboutus' : (BuildContext context)=> AboutUs(),
+        '/infosumber' : (BuildContext context)=> InformasiSumber()
       },
       theme: ThemeData(
         primaryColor: Color(0xFFF26968),
